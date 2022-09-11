@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Conditions</title>
+</head>
+
+<body>
+ 
+<form onsubmit="doCheck(); return false" >
+
+ Marks =<input type="number" id="percentage">
+<br>
+
+<button>Grade</button>
+
+</form>
+
+</body>
+
+   <h1>Result</h1>
+
+<script>
+
+function doCheck () {
+let percentage = +document.querySelector("#percentage").value;
+ if (percentage <80) {
+
+   let result=("A+");
+
+ console.log("result:",result);
+  document.querySelector("#percentage").innerHTML=Result
+
+ }
+
+}
+</script>
+
+</body>
+</html>
